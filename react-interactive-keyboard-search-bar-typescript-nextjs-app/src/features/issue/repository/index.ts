@@ -23,7 +23,8 @@ export class issueRepository implements issueFactory {
           method: 'get',
         }
       )
-      return response.data
+      const { data } = response
+      return data
     } catch (error) {
       throw error
     }

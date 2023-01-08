@@ -16,7 +16,7 @@ const clampError = (error: any): BackendResponse => {
 
 axios.interceptors.response.use(
   (response) => {
-    return response.data
+    return response
   },
   (error) => {
     const niceError = {
